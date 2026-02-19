@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C C:/Users/remyd/Desktop/iony-systems-website status)",
+      "Bash(git -C C:/Users/remyd/Desktop/iony-systems-website remote:*)"
+    ]
+  }
+}

@@ -47,6 +47,30 @@ html {
   font-size: 0.8rem;
 }
 
+/* Ajustements mobile uniquement */
+@media (max-width: 768px) {
+  /* 1. Avatar 50% plus grand */
+  .hero-logo,
+  .hero-logo-placeholder {
+    max-width: 225px;
+  }
+
+  /* 2. Social links centrés dans le Hero */
+  .hero-social .social-links {
+    justify-content: center;
+  }
+
+  /* 3. Liens légaux en vertical dans le footer */
+  .footer-legal {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+
+  .footer-legal-sep {
+    display: none;
+  }
+}
+
 /* Drapeau langue dans la navbar */
 .lang-flag {
   font-size: 1.25rem;
