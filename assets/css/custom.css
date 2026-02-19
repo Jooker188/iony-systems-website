@@ -1,3 +1,8 @@
+/* Footer plus compact */
+.site-footer {
+  padding: var(--spacing-md) var(--spacing-lg);
+}
+
 /* Empêche le dépassement horizontal */
 html {
   overflow-x: hidden;
@@ -25,6 +30,7 @@ html {
 /* Liens légaux dans le footer */
 .footer-legal {
   margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,6 +55,20 @@ html {
 
 /* Ajustements mobile uniquement */
 @media (max-width: 768px) {
+  /* Masquer le menu hamburger (pas de nav) */
+  .mobile-menu-toggle {
+    display: none;
+  }
+
+  /* Décaler légèrement le titre vers la droite et grossir la police */
+  .header-logo {
+    padding-left: var(--spacing-sm);
+  }
+
+  .header-logo .logo-link {
+    font-size: 1.1rem;
+  }
+
   /* 1. Avatar 50% plus grand */
   .hero-logo,
   .hero-logo-placeholder {
