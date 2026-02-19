@@ -1,0 +1,46 @@
+baseURL = 'https://example.org/'
+languageCode = 'fr'
+title = 'IONY SYSTEMS'
+theme = 'mana-theme'
+
+[params]
+  description = "Logiciels, apps & services SaaS"
+  tabTitle = "IONY SYSTEMS — Solutions logicielles & services numériques"
+  author = "Iony Systems"
+  heroTitleLine1 = "IONY"
+  heroTitleLine2 = "SYSTEMS"
+
+  # Social media links (supprimer ceux que tu n'utilises pas)
+  [params.social]
+    linkedin = "www.linkedin.com/in/remy-dionisio"
+    email = "contact@iony-systems.com"
+
+  # Avatar affiché dans le Hero (remplace l'URL par ton image)
+  [params.avatar]
+    url = ""
+    # Ou utilise un fichier local dans /assets/images/
+    assetPath = "images/avatar.png"
+
+# Menu de navigation
+
+
+[outputs]
+  home = ["HTML", "JSON"]
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 6
+    ordered = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    noClasses = false
+    style = "catppuccin-macchiato"

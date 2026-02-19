@@ -1,0 +1,18 @@
+<footer class="site-footer">
+  <div class="footer-content">
+    <p class="footer-text">
+      &copy;
+      {{/* prettier-ignore-start */}}
+      {{ if site.Params.copyright.startYear }}{{ site.Params.copyright.startYear }}-{{ end }}{{ now.Year }}
+      {{/* prettier-ignore-end */}}
+      {{ site.Params.copyright.owner | default site.Title }}. Tous droits réservés.
+    </p>
+    <nav class="footer-legal" aria-label="Liens légaux">
+      <a href="/mentions-legales/" class="footer-legal-link">Mentions légales</a>
+      <span class="footer-legal-sep">·</span>
+      <a href="/conditions-utilisation/" class="footer-legal-link">Conditions d'utilisation</a>
+      <span class="footer-legal-sep">·</span>
+      <a href="/politique-confidentialite/" class="footer-legal-link">Politique de confidentialité</a>
+    </nav>
+  </div>
+</footer>
