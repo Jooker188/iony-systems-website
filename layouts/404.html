@@ -1,0 +1,32 @@
+{{ define "main" }}
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="hero-title-line2">Erreur 404</span>
+            <span class="hero-title-line1">Hmmm où allez-vous ?</span>
+          </h1>
+          <p class="hero-subtitle">
+            &gt;
+            {{ if site.Params.custom404Message }}
+              {{ site.Params.custom404Message | safeHTML }}
+            {{ else }}
+              La page que vous cherchez n'existe pas.
+            {{ end }}
+          </p>
+          <div class="hero-social" style="margin-top: var(--spacing-lg);">
+            <a href="{{ .Site.Home.RelPermalink }}" class="post-tag"> Page d'accueil </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="/images/avatar.png"
+            alt="{{ site.Title }}"
+            class="hero-logo">
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

@@ -62,7 +62,7 @@ html {
 
   /* Décaler légèrement le titre vers la droite et grossir la police */
   .header-logo {
-    padding-left: var(--spacing-sm);
+    padding-left: 0.6rem;
   }
 
   .header-logo .logo-link {
@@ -91,12 +91,20 @@ html {
   }
 }
 
+/* Décalage boutons navbar en mobile */
+@media (max-width: 768px) {
+  .header-menu {
+    margin-right: 0.5rem;
+  }
+}
+
 /* Drapeau langue dans la navbar */
 .lang-flag {
-  font-size: 1.25rem;
-  line-height: 1;
+  width: 2.25rem;
+  height: auto;
   display: flex;
   align-items: center;
   padding: var(--spacing-sm);
   opacity: 0.85;
+  cursor: pointer;
 }

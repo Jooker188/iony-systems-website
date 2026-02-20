@@ -12,7 +12,7 @@ theme = 'mana-theme'
 
   # Social media links (supprimer ceux que tu n'utilises pas)
   [params.social]
-    linkedin = "www.linkedin.com/in/remy-dionisio"
+    linkedin = "https://www.linkedin.com/in/remy-dionisio"
     email = "contact@iony-systems.com"
 
   # Avatar affiché dans le Hero (remplace l'URL par ton image)
