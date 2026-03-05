@@ -1,17 +1,31 @@
-name: Deploy Hugo site to GitHub Pages
+# Workflow pour déployer Hugo sur GitHub Pages
+name: Deploy Hugo site to Pages
 
 on:
+  # Se déclenche lors d'un push sur la branche par défaut
   push:
-    branches:
-      - main
+    branches: ["main"]
+
+  # Permet de lancer le workflow manuellement depuis l'onglet Actions
   workflow_dispatch:
 
+# Autorisations nécessaires pour GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# Annule les déploiements en cours si un nouveau est lancé
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
 jobs:
+  # Job de build
   build:
     runs-on: ubuntu-latest
     env:
@@ -24,25 +38,31 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Hugo
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
-          sudo dpkg -i ${{ runner.temp }}/hugo.deb
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
 
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Build
+      - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
-        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+        run: |
+          hugo \
+            --gc \
+            --minify \
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
+  # Job de déploiement
   deploy:
     environment:
       name: github-pages
