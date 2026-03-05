@@ -21,9 +21,7 @@
 <script>
   
   (function () {
-    const storedTheme = localStorage.getItem("theme");
-    const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
-    const theme = storedTheme || (systemPrefersLight ? "light" : "dark");
+    const theme = "dark";
     document.documentElement.setAttribute("data-theme", theme);
   })();
 </script>
@@ -31,7 +29,7 @@
 <meta
   name="description"
   content="
-    Introduction Iony Systems s&rsquo;engage à protéger la vie privée des utilisateurs de son site iony-systems.com. La présente politique de confidentialité décrit …
+    Introduction Iony Systems (SIREN 10129565700015, 12 avenue de Saint-Germain, 78160 Marly-le-Roi, France) s&rsquo;engage à protéger la vie privée des …
   
   ">
 
@@ -49,7 +47,7 @@
 
 <meta property="og:type" content="article">
 <meta property="og:title" content="Politique de confidentialité | IONY SYSTEMS">
-<meta property="og:description" content="Introduction Iony Systems s&rsquo;engage à protéger la vie privée des utilisateurs de son site iony-systems.com. La présente politique de confidentialité décrit …">
+<meta property="og:description" content="Introduction Iony Systems (SIREN 10129565700015, 12 avenue de Saint-Germain, 78160 Marly-le-Roi, France) s&rsquo;engage à protéger la vie privée des …">
 <meta property="og:url" content="http://localhost:1313/politique-confidentialite/">
 <meta property="og:site_name" content="IONY SYSTEMS"><meta property="article:published_time" content="2026-02-18T00:00:00Z">
   <meta
@@ -57,7 +55,7 @@
     content="2026-02-18T00:00:00Z">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Politique de confidentialité | IONY SYSTEMS">
-<meta name="twitter:description" content="Introduction Iony Systems s&rsquo;engage à protéger la vie privée des utilisateurs de son site iony-systems.com. La présente politique de confidentialité décrit …">
+<meta name="twitter:description" content="Introduction Iony Systems (SIREN 10129565700015, 12 avenue de Saint-Germain, 78160 Marly-le-Roi, France) s&rsquo;engage à protéger la vie privée des …">
 
 <script type="application/ld+json">
 
@@ -66,11 +64,7 @@
 
 
 
-
-
-
-
-"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"author\":{\"@type\":\"Person\",\"email\":\"contact@iony-systems.com\",\"name\":\"Iony Systems\"},\"dateModified\":\"2026-02-18T00:00:00Z\",\"datePublished\":\"2026-02-18T00:00:00Z\",\"description\":\"Introduction Iony Systems s\\u0026rsquo;engage à protéger la vie privée des utilisateurs de son site iony-systems.com. La présente politique de confidentialité décrit …\",\"headline\":\"Politique de confidentialité\",\"image\":\"\",\"mainEntityOfPage\":{\"@id\":\"http://localhost:1313/politique-confidentialite/\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"\"},\"name\":\"IONY SYSTEMS\"}}"</script>
+"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"author\":{\"@type\":\"Person\",\"email\":\"contact@iony-systems.com\",\"name\":\"Iony Systems\"},\"dateModified\":\"2026-02-18T00:00:00Z\",\"datePublished\":\"2026-02-18T00:00:00Z\",\"description\":\"Introduction Iony Systems (SIREN 10129565700015, 12 avenue de Saint-Germain, 78160 Marly-le-Roi, France) s\\u0026rsquo;engage à protéger la vie privée des …\",\"headline\":\"Politique de confidentialité\",\"mainEntityOfPage\":{\"@id\":\"http://localhost:1313/politique-confidentialite/\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"IONY SYSTEMS\"}}"</script>
 
 
 
@@ -157,8 +151,8 @@
 
 <link
   rel="stylesheet"
-  href="/css/custom.min.a722d0382104328be2f26dcc5d4e454b8efff479caa7098b665308464179aee0.css"
-  integrity="sha256-pyLQOCEEMovi8m3MXU5FS47/9HnKpwmLZlMIRkF5ruA=">
+  href="/css/custom.min.9eb09b88c75c8372761a12a0b162d7fe6635e023f212c59de29daa8f39e11305.css"
+  integrity="sha256-nrCbiMdcg3J2GhKgsWLX/mY14CPyEsWd4p2qjznhEwU=">
 
 
 
@@ -218,38 +212,42 @@
     <div class="header-menu">
       <ul class="menu-list">
   
+    <li class="menu-item">
+      <a
+        href="/#services"
+        class="menu-link ">
+        Services
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/#about"
+        class="menu-link ">
+        À propos
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/#projects"
+        class="menu-link ">
+        Projets
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/#contact"
+        class="menu-link ">
+        Contact
+      </a>
+    </li>
+  
 </ul>
 
 
-      <button id="search-toggle" class="search-toggle" aria-label="Search" type="button">
-        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-        </svg>
-      </button>
-
-      <img src="/images/fr.svg" alt="Site en français" title="Site en français" class="lang-flag" aria-label="Site en français">
-
-      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" type="button">
-  <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-    <path
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
-      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
-  </svg>
-  <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-    <path
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
-      d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-  </svg>
-</button>
-
+<img src="/images/fr.svg" alt="Site en français" title="Site en français" class="lang-flag" aria-label="Site en français">
     </div>
   </div>
 
@@ -272,40 +270,45 @@
       <nav class="mobile-menu-nav" role="navigation" aria-label="Mobile navigation">
         <ul class="menu-list">
   
+    <li class="menu-item">
+      <a
+        href="/#services"
+        class="menu-link ">
+        Services
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/#about"
+        class="menu-link ">
+        À propos
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/#projects"
+        class="menu-link ">
+        Projets
+      </a>
+    </li>
+  
+    <li class="menu-item">
+      <a
+        href="/#contact"
+        class="menu-link ">
+        Contact
+      </a>
+    </li>
+  
 </ul>
 
       </nav>
-      <div class="mobile-menu-footer">
-        <button id="mobile-search-toggle" class="mobile-search-toggle" aria-label="Search" type="button">
-          <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-          </svg>
-          <span>Search</span>
-        </button>
-        <button class="theme-toggle" aria-label="Toggle theme" type="button">
-          <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
-          </svg>
-          <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-          </svg>
-        </button>
-      </div>
     </div>
   </div>
 </nav>
+
 
       </div>
     </header>
@@ -352,7 +355,7 @@
             stroke-width="2"
             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
         </svg>
-        206 mots
+        1304 mots
       </span>
     
 
@@ -366,7 +369,7 @@
             stroke-width="2"
             d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
         </svg>
-        1 min
+        7 min
       </span>
     
   </div>
@@ -378,34 +381,132 @@
 
       <div class="post-content-main">
         <h2 id="introduction">Introduction</h2>
-<p>Iony Systems s&rsquo;engage à protéger la vie privée des utilisateurs de son site iony-systems.com. La présente politique de confidentialité décrit les données collectées et la manière dont elles sont utilisées.</p>
-<h2 id="données-collectées">Données collectées</h2>
-<p>Nous pouvons collecter les données suivantes :</p>
+<p>Iony Systems (SIREN 10129565700015, 12 avenue de Saint-Germain, 78160 Marly-le-Roi, France) s&rsquo;engage à protéger la vie privée des utilisateurs de son site iony-systems.com et de ses applications mobiles. La présente politique de confidentialité décrit les données collectées, la manière dont elles sont utilisées, et vos droits en la matière.</p>
+<p>Date de dernière mise à jour : 01 mars 2026</p>
+<hr>
+<h2 id="1-données-collectées">1. Données collectées</h2>
+<h3 id="11-données-de-navigation-site-web">1.1 Données de navigation (site web)</h3>
+<p>Lors de la visite de notre site, nous pouvons collecter automatiquement :</p>
 <ul>
-<li>Données de navigation (adresse IP, pages visitées, durée de visite)</li>
-<li>Données transmises volontairement via les formulaires de contact (nom, adresse email, message)</li>
+<li>Adresse IP</li>
+<li>Pages visitées et durée de visite</li>
+<li>Type de navigateur et système d&rsquo;exploitation</li>
+<li>Source du trafic (referrer)</li>
 </ul>
-<h2 id="utilisation-des-données">Utilisation des données</h2>
-<p>Les données collectées sont utilisées uniquement pour :</p>
+<h3 id="12-données-transmises-volontairement">1.2 Données transmises volontairement</h3>
+<p>Via nos formulaires de contact :</p>
 <ul>
-<li>Assurer le bon fonctionnement du site</li>
-<li>Répondre à vos demandes de contact</li>
-<li>Améliorer nos services</li>
+<li>Nom et prénom</li>
+<li>Adresse email</li>
+<li>Contenu du message</li>
 </ul>
-<p>Vos données ne sont jamais vendues ni transmises à des tiers sans votre consentement.</p>
-<h2 id="cookies">Cookies</h2>
-<p>Ce site peut utiliser des cookies techniques nécessaires à son fonctionnement. Vous pouvez configurer votre navigateur pour refuser les cookies, ce qui peut affecter certaines fonctionnalités du site.</p>
-<h2 id="vos-droits-rgpd">Vos droits (RGPD)</h2>
+<h3 id="13-données-collectées-via-google-sign-in-authentification-google">1.3 Données collectées via Google Sign-In (authentification Google)</h3>
+<p>Lorsque vous choisissez de vous connecter à nos applications via votre compte Google, nous accédons, avec votre consentement explicite, aux informations suivantes fournies par Google :</p>
+<ul>
+<li>Adresse email associée à votre compte Google</li>
+<li>Nom d&rsquo;affichage (prénom et nom)</li>
+<li>Photo de profil (URL)</li>
+<li>Identifiant unique Google (Google User ID)</li>
+</ul>
+<p>Ces données sont utilisées <strong>exclusivement</strong> pour créer et gérer votre compte utilisateur au sein de nos applications, et pour vous authentifier de manière sécurisée.</p>
+<p><strong>Nous ne collectons aucune autre donnée Google</strong> au-delà des informations listées ci-dessus. Nous n&rsquo;accédons pas à vos emails, contacts, calendriers, ou tout autre contenu de votre compte Google.</p>
+<h3 id="14-données-collectées-via-sign-in-with-apple-authentification-apple">1.4 Données collectées via Sign in with Apple (authentification Apple)</h3>
+<p>Lorsque vous choisissez de vous connecter à nos applications via votre identifiant Apple, nous accédons, avec votre consentement explicite, aux informations suivantes fournies par Apple :</p>
+<ul>
+<li><strong>Adresse email</strong> : soit votre véritable adresse email Apple, soit une adresse relay anonymisée générée par Apple si vous activez la fonctionnalité <strong>« Masquer mon adresse e-mail »</strong> (par exemple <code>xyz@privaterelay.appleid.com</code>)</li>
+<li><strong>Prénom et nom</strong> : fournis uniquement lors de la <strong>première connexion</strong>. Apple ne retransmet pas le nom lors des connexions ultérieures ; nous le conservons dans notre système pour pouvoir personnaliser votre expérience</li>
+<li><strong>Identifiant unique Apple</strong> (Apple User ID) : identifiant stable et propre à votre compte sur nos applications, fourni par Apple</li>
+</ul>
+<p>Ces données sont utilisées <strong>exclusivement</strong> pour créer et gérer votre compte utilisateur, et pour vous authentifier de manière sécurisée.</p>
+<p><strong>Nous ne collectons aucune autre donnée Apple</strong> au-delà des informations listées ci-dessus. Nous n&rsquo;accédons pas à votre iCloud, vos contacts, ou tout autre service Apple.</p>
+<hr>
+<h2 id="2-utilisation-des-données">2. Utilisation des données</h2>
+<p>Les données collectées sont utilisées pour :</p>
+<ul>
+<li>Assurer le bon fonctionnement du site et de nos applications</li>
+<li>Créer et gérer votre compte utilisateur</li>
+<li>Vous authentifier via Google Sign-In ou Sign in with Apple</li>
+<li>Répondre à vos demandes de contact et de support</li>
+<li>Améliorer nos services et l&rsquo;expérience utilisateur</li>
+<li>Respecter nos obligations légales</li>
+</ul>
+<p><strong>Vos données ne sont jamais vendues, louées ni cédées à des tiers à des fins commerciales.</strong></p>
+<hr>
+<h2 id="3-politiques-dusage-limité-des-fournisseurs-dauthentification">3. Politiques d&rsquo;usage limité des fournisseurs d&rsquo;authentification</h2>
+<h3 id="31-données-google--politique-dusage-limité">3.1 Données Google — Politique d&rsquo;usage limité</h3>
+<p>L&rsquo;utilisation et le transfert des informations reçues des API Google vers toute autre application respectent la <a href="https://developers.google.com/terms/api-services-user-data-policy">Politique relative aux données utilisateur des services API Google</a>, y compris les exigences d&rsquo;utilisation limitée (Limited Use).</p>
+<p>Concrètement, cela signifie que :</p>
+<ul>
+<li>Les données obtenues via Google Sign-In sont utilisées <strong>uniquement</strong> pour fournir et améliorer nos services</li>
+<li>Nous ne les utilisons pas à des fins publicitaires</li>
+<li>Nous ne les revendons pas à des tiers</li>
+<li>Nous ne les utilisons pas pour créer des profils à des fins publicitaires ou de suivi</li>
+<li>L&rsquo;accès aux données est strictement limité aux personnes nécessitant un accès pour faire fonctionner nos services</li>
+</ul>
+<h3 id="32-données-apple--conformité-sign-in-with-apple">3.2 Données Apple — Conformité Sign in with Apple</h3>
+<p>L&rsquo;utilisation des informations reçues via Sign in with Apple est conforme aux <a href="https://developer.apple.com/sign-in-with-apple/">Conditions d&rsquo;utilisation des services Apple</a> et aux directives de l&rsquo;App Store Review.</p>
+<p>Concrètement :</p>
+<ul>
+<li>Les données obtenues via Sign in with Apple sont utilisées <strong>uniquement</strong> pour fournir nos services et gérer votre compte</li>
+<li>Nous respectons le choix de l&rsquo;utilisateur d&rsquo;utiliser une adresse email relay anonymisée (« Masquer mon adresse e-mail »)</li>
+<li>Nous ne tentons pas de retrouver la véritable adresse email derrière une adresse relay Apple</li>
+<li>Nous ne partageons pas les données Apple avec des tiers à des fins publicitaires ou commerciales</li>
+</ul>
+<hr>
+<h2 id="4-partage-des-données">4. Partage des données</h2>
+<p>Nous ne partageons vos données personnelles avec des tiers que dans les cas suivants :</p>
+<ul>
+<li><strong>Prestataires techniques</strong> (hébergement, analyse) opérant sous contrat et s&rsquo;engageant à respecter la confidentialité de vos données</li>
+<li><strong>Obligations légales</strong> : si la loi nous y oblige ou dans le cadre d&rsquo;une procédure judiciaire</li>
+<li><strong>Protection des droits</strong> : pour protéger les droits, la propriété ou la sécurité d&rsquo;Iony Systems, de nos utilisateurs ou du public</li>
+</ul>
+<hr>
+<h2 id="5-cookies-et-traceurs">5. Cookies et traceurs</h2>
+<h3 id="cookies-techniques">Cookies techniques</h3>
+<p>Ce site utilise des cookies techniques nécessaires à son fonctionnement (préférence de thème, session utilisateur). Ces cookies ne collectent pas de données personnelles à des fins de suivi.</p>
+<h3 id="cookies-analytiques">Cookies analytiques</h3>
+<p>Nous utilisons Google Analytics pour mesurer l&rsquo;audience de notre site (pages vues, source du trafic, durée de visite). Ces données sont anonymisées dans la mesure du possible. Vous pouvez refuser ce suivi via les paramètres de votre navigateur ou en utilisant un bloqueur de traceurs.</p>
+<p>Vous pouvez configurer votre navigateur pour refuser les cookies, ce qui peut affecter certaines fonctionnalités du site.</p>
+<hr>
+<h2 id="6-conservation-des-données">6. Conservation des données</h2>
+<ul>
+<li><strong>Données de compte</strong> : conservées tant que votre compte est actif et pendant 3 ans après sa suppression, sauf obligation légale contraire</li>
+<li><strong>Données de navigation</strong> : conservées 26 mois maximum (durée standard Google Analytics)</li>
+<li><strong>Données de contact</strong> : conservées 3 ans à compter de notre dernier échange</li>
+</ul>
+<hr>
+<h2 id="7-sécurité-des-données">7. Sécurité des données</h2>
+<p>Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données contre tout accès non autorisé, toute modification, divulgation ou destruction. Ces mesures comprennent notamment le chiffrement des communications (HTTPS/TLS) et l&rsquo;accès restreint aux données personnelles.</p>
+<hr>
+<h2 id="8-suppression-de-compte-et-des-données">8. Suppression de compte et des données</h2>
+<p>Vous pouvez demander la suppression de votre compte et de toutes les données personnelles associées à tout moment en nous contactant à : <strong><a href="mailto:contact@iony-systems.com">contact@iony-systems.com</a></strong></p>
+<p>Après réception de votre demande, nous traiterons la suppression dans un délai de <strong>30 jours</strong>. Certaines données peuvent être conservées au-delà de ce délai pour répondre à des obligations légales.</p>
+<p>Vous pouvez également révoquer l&rsquo;accès de nos applications à votre compte Google à tout moment depuis les <a href="https://myaccount.google.com/permissions">paramètres de votre compte Google</a>.</p>
+<p>Si vous vous êtes connecté via <strong>Sign in with Apple</strong>, vous pouvez révoquer l&rsquo;accès de nos applications à tout moment depuis <strong>Réglages &gt; [Votre nom] &gt; Mot de passe et sécurité &gt; Apps utilisant votre identifiant Apple</strong> sur votre appareil Apple. Vous pouvez également gérer ces accès sur <a href="https://appleid.apple.com">appleid.apple.com</a>.</p>
+<p><strong>Note importante :</strong> Conformément aux exigences d&rsquo;Apple, toute application utilisant Sign in with Apple doit proposer une fonctionnalité de suppression de compte. La suppression de votre compte entraîne la suppression de toutes vos données personnelles dans un délai de 30 jours.</p>
+<hr>
+<h2 id="9-vos-droits-rgpd">9. Vos droits (RGPD)</h2>
 <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :</p>
 <ul>
 <li><strong>Droit d&rsquo;accès</strong> : obtenir une copie de vos données personnelles</li>
 <li><strong>Droit de rectification</strong> : corriger des données inexactes</li>
 <li><strong>Droit à l&rsquo;effacement</strong> : demander la suppression de vos données</li>
 <li><strong>Droit d&rsquo;opposition</strong> : vous opposer au traitement de vos données</li>
+<li><strong>Droit à la portabilité</strong> : recevoir vos données dans un format structuré et lisible par machine</li>
+<li><strong>Droit de limitation</strong> : demander la limitation du traitement de vos données</li>
 </ul>
-<p>Pour exercer ces droits, contactez-nous à : <a href="mailto:contact@iony-systems.com">contact@iony-systems.com</a></p>
-<h2 id="contact">Contact</h2>
-<p>Pour toute question relative à cette politique : <a href="mailto:contact@iony-systems.com">contact@iony-systems.com</a></p>
+<p>Pour exercer ces droits, contactez-nous à : <strong><a href="mailto:contact@iony-systems.com">contact@iony-systems.com</a></strong></p>
+<p>En cas de litige non résolu, vous avez le droit d&rsquo;introduire une réclamation auprès de la CNIL (Commission Nationale de l&rsquo;Informatique et des Libertés) : <a href="https://www.cnil.fr">www.cnil.fr</a></p>
+<hr>
+<h2 id="10-modifications-de-cette-politique">10. Modifications de cette politique</h2>
+<p>Nous pouvons mettre à jour cette politique de confidentialité à tout moment. La date de dernière mise à jour est indiquée en haut de ce document. En cas de modification substantielle, nous vous en informerons par email ou via une notification dans nos applications.</p>
+<hr>
+<h2 id="11-contact">11. Contact</h2>
+<p><strong>Responsable du traitement :</strong>
+IONY SYSTEMS
+12 avenue de Saint-Germain
+78160 Marly-le-Roi, France
+Email : <a href="mailto:contact@iony-systems.com">contact@iony-systems.com</a></p>
 
       </div>
 
@@ -468,11 +569,34 @@
     <li>
       <ul>
         <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#données-collectées">Données collectées</a></li>
-        <li><a href="#utilisation-des-données">Utilisation des données</a></li>
-        <li><a href="#cookies">Cookies</a></li>
-        <li><a href="#vos-droits-rgpd">Vos droits (RGPD)</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#1-données-collectées">1. Données collectées</a>
+          <ul>
+            <li><a href="#11-données-de-navigation-site-web">1.1 Données de navigation (site web)</a></li>
+            <li><a href="#12-données-transmises-volontairement">1.2 Données transmises volontairement</a></li>
+            <li><a href="#13-données-collectées-via-google-sign-in-authentification-google">1.3 Données collectées via Google Sign-In (authentification Google)</a></li>
+            <li><a href="#14-données-collectées-via-sign-in-with-apple-authentification-apple">1.4 Données collectées via Sign in with Apple (authentification Apple)</a></li>
+          </ul>
+        </li>
+        <li><a href="#2-utilisation-des-données">2. Utilisation des données</a></li>
+        <li><a href="#3-politiques-dusage-limité-des-fournisseurs-dauthentification">3. Politiques d&rsquo;usage limité des fournisseurs d&rsquo;authentification</a>
+          <ul>
+            <li><a href="#31-données-google--politique-dusage-limité">3.1 Données Google — Politique d&rsquo;usage limité</a></li>
+            <li><a href="#32-données-apple--conformité-sign-in-with-apple">3.2 Données Apple — Conformité Sign in with Apple</a></li>
+          </ul>
+        </li>
+        <li><a href="#4-partage-des-données">4. Partage des données</a></li>
+        <li><a href="#5-cookies-et-traceurs">5. Cookies et traceurs</a>
+          <ul>
+            <li><a href="#cookies-techniques">Cookies techniques</a></li>
+            <li><a href="#cookies-analytiques">Cookies analytiques</a></li>
+          </ul>
+        </li>
+        <li><a href="#6-conservation-des-données">6. Conservation des données</a></li>
+        <li><a href="#7-sécurité-des-données">7. Sécurité des données</a></li>
+        <li><a href="#8-suppression-de-compte-et-des-données">8. Suppression de compte et des données</a></li>
+        <li><a href="#9-vos-droits-rgpd">9. Vos droits (RGPD)</a></li>
+        <li><a href="#10-modifications-de-cette-politique">10. Modifications de cette politique</a></li>
+        <li><a href="#11-contact">11. Contact</a></li>
       </ul>
     </li>
   </ul>
@@ -501,7 +625,7 @@
       
       2026
       
-      IONY SYSTEMS. Tous droits réservés.
+      Iony Systems. Tous droits réservés.
     </p>
   </div>
 </footer>
@@ -573,7 +697,7 @@
 
 
 
-<script src="/js/main.min.cdc6a3c4f498c0556bc507848c493a55af2da9b14233c21300b240b89857180d.js" defer></script>
+<script src="/js/main.min.833c796f6a9fd060ed0ec067675f06991b3e4d8f5f7607e0f6969e8c198f9b3c.js" defer></script>
 
   </body>
 </html>

@@ -4,24 +4,37 @@ title = 'IONY SYSTEMS'
 theme = 'mana-theme'
 
 [params]
-  description = "Logiciels, apps & services SaaS"
-  tabTitle = "IONY SYSTEMS — Solutions logicielles & services numériques"
+  description = "Studio de développement d'applications mobiles iOS & Android"
+  tabTitle = "IONY SYSTEMS — Studio de développement mobile iOS & Android"
   author = "Iony Systems"
-  heroTitleLine1 = "IONY"
-  heroTitleLine2 = "SYSTEMS"
 
-  # Social media links (supprimer ceux que tu n'utilises pas)
   [params.social]
     linkedin = "https://www.linkedin.com/in/remy-dionisio"
     email = "contact@iony-systems.com"
 
-  # Avatar affiché dans le Hero (remplace l'URL par ton image)
-  [params.avatar]
-    url = ""
-    # Ou utilise un fichier local dans /assets/images/
-    assetPath = "images/avatar.png"
+  [params.copyright]
+    owner = "Iony Systems"
 
 # Menu de navigation
+[[menus.main]]
+  name = "Services"
+  url = "/#services"
+  weight = 10
+
+[[menus.main]]
+  name = "À propos"
+  url = "/#about"
+  weight = 20
+
+[[menus.main]]
+  name = "Projets"
+  url = "/#projects"
+  weight = 30
+
+[[menus.main]]
+  name = "Contact"
+  url = "/#contact"
+  weight = 40
 
 
 [outputs]

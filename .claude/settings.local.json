@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(git -C C:/Users/remyd/Desktop/iony-systems-website status)",
-      "Bash(git -C C:/Users/remyd/Desktop/iony-systems-website remote:*)"
+      "Bash(git -C C:/Users/remyd/Desktop/iony-systems-website remote:*)",
+      "Bash(hugo --minify)",
+      "Bash(/c/Users/remyd/Downloads/hugo_0.156.0_windows-amd64/hugo.exe --minify)",
+      "mcp__Claude_Preview__preview_start"
     ]
   }
 }

@@ -13,11 +13,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="language" content="{{ site.Language.LanguageCode }}">
 <script>
-  // Set theme immediately to prevent flash
+  // Force dark theme always
   (function () {
-    const storedTheme = localStorage.getItem("theme");
-    const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
-    const theme = storedTheme || (systemPrefersLight ? "light" : "dark");
+    const theme = "dark";
     document.documentElement.setAttribute("data-theme", theme);
   })();
 </script>
